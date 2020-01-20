@@ -3,7 +3,7 @@ setup(
     name='toy-ridesharing',
     version='0.1',
     packages=find_packages(),
-    url='',
+    url='https://github.com/PhysicsOfMobility/ridesharing_topology_dependence',
     license='BSD',
     author='Debsankha Manik',
     author_email='deb@debsankha.net',
