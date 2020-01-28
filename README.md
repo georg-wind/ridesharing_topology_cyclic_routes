@@ -1,7 +1,6 @@
 This contains all the necessary resources to generate the figures in the manuscript
-"Topology dependence of on-demand ride-sharing, Molkenthin and Manik, 2020". This is
-also available at:
-https://github.com/PhysicsOfMobility/ridesharing_topology_dependence. 
+"Topology dependence of on-demand ride-sharing, Molkenthin and Manik, 2020", 
+https://arxiv.org/abs/2001.09711.  
 
 HOWTO
 -----
