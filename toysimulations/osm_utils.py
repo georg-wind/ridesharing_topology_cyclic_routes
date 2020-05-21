@@ -162,11 +162,11 @@ def homogenize_edge_lengths(G, target_edge_length=100):
 
         H.add_node(u, **G.nodes[u])
         H.add_node(v, **G.nodes[v])
-        H.add_edge(u, v, **data)
 
         num_new_nodes, last_edge_length = divmod(length, target_edge_length)
         num_new_nodes = int(num_new_nodes)
         if num_new_nodes == 0:
+            H.add_edge(u, v, **data)
             continue
 
         frac_arr = np.arange(0, length, target_edge_length)/length
