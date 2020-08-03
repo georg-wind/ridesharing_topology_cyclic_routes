@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/235116234.svg)](https://zenodo.org/badge/latestdoi/235116234)
+
 This contains all the necessary resources to generate the figures in the manuscript
 "Topology dependence of on-demand ride-sharing, Molkenthin and Manik, 2020", 
 https://arxiv.org/abs/2001.09711.  
