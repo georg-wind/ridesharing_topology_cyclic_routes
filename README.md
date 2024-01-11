@@ -1,14 +1,8 @@
-[![DOI](https://zenodo.org/badge/235116234.svg)](https://zenodo.org/badge/latestdoi/235116234)
-
-This contains all the necessary resources to generate the figures in the article
-
-Manik, D., Molkenthin, N. *Topology dependence of on-demand ride-sharing*. **Appl Netw Sci** 5, 49 (2020). https://doi.org/10.1007/s41109-020-00290-2, 
-https://arxiv.org/abs/2001.09711.  
-
+This is a fork of a repo by Debsankha Manik.
+It contains all relevant code for replicating the simulations and analyses done in my master-thesis titled "Complex Street-Network Topologies and the Emergence of Cyclic Routes in On-Demand Ride-Sharing".
 
 HOWTO
 -----
-
 1. Install the software
 
 ```bash
@@ -20,9 +14,14 @@ pip install -r requirements.txt
 pip install -e ./
 ```
 
-2. Download streetnetworks using OSMnx for figures 5-6. Execute `generate_data_and_plot/gen_streetnetworks_for_simulations.ipynb`.
+2. Make sure the folder `data` exists. This is where all data will be stored. It must contain the following subfolders: `01_simulations`, `02_stats`, `03_casestudy`, `03_optimalities`.
 
-3. Run the simulations. This can be done by running `generate_data_and_plot/generate_all_data.py`. This is a time and resource
-intensive step, which is best done parallely in an HPC cluster. Ways to do so are described in `generate_data_and_plot/cluster_generate_all_data.py`
+3. Set the simulation parameters. This can be done by editing the file `utils/env_parameters.py`
 
-4. Now the figures can be generated. Execute the notebooks `generate_data_and_plot/fig_.*.ipynb`.
+4. Run the simulations. This can be done by running `_01_multiprocessing_data_generation`. 
+
+5. Run the analysis. This can be done by running `_02_multiprocessing_stats_generation`.
+
+6. Calculate the Route-Optimality Values. This can be done by running `_03_routespace_analysis`.
+
+7. Generate the plots. This can be done by running the files in `_06_graphics_thesis`.

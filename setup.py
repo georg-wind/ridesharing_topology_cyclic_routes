@@ -1,11 +1,10 @@
 from setuptools import setup, find_packages
 setup(
-    name='toy-ridesharing',
+    name='ridesharing-topology-flexibility',
     version='0.1',
     packages=find_packages(),
-    url='https://github.com/PhysicsOfMobility/ridesharing_topology_dependence',
+    url='https://github.com/georg-wind/ridesharing-topology-flexibility',
     license='BSD',
-    author='Debsankha Manik',
-    author_email='deb@debsankha.net',
-    description='A python package to reproduce the figues in the manuscript "Topology dependence of on-demand ride-sharing", Molkenthin and Manik, 2020',
+    author='Georg Wind',
+    description='A python package to reproduce the simulations and analyses of my master thesis.',
 )
